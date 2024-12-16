@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(173, 146, 146);
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1cm;
+    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+nav {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: aquamarine;
+    font-size: 30px;
+    text-align: justify;
+}
+
+header {
+    background-color: bisque;
+}
+
+footer {
+    background-color:brown;
+}
+
+.welcome-header {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+a {
+    color:blue;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+ol {
+    text-align: center;
+}
+
+img {
+    width: 15%;
+}
+
+p {
+    text-align: center;
+    line-height: 30px;
+}
