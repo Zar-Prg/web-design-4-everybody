@@ -37,20 +37,68 @@ a {
     color:blue;
 }
 
-li {
+/* li {
     display: inline-block;
     font-size: 20px;
-}
+} */
 
 ol {
     text-align: center;
 }
 
-img {
-    width: 15%;
-}
-
 p {
     text-align: center;
     line-height: 30px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.current{
+    text-transform: uppercase;
+    background-color: blanchedalmond;
+}
+
+.image-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    padding: 5%;
+}
+
+.image-container img{
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+nav{
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+}
+
+header img{
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    justify-content:space-evenly;
+    align-items: center;
+    row-gap: 10px;
+    padding: 5%;
+}
+
+.grid img{
+    width: 100%
 }
