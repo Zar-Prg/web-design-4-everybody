@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width">
   <title>Andrei's workout ideas</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
+  <script>
+    var username = prompt("Please enter your name");
+    document.write("<h1>Writing to the document your name take from the prompt: " + username + "</h1>");
+
+  </script>
   <a href="#main_content" class="skip_button">Skip to main content</a>
   <header>
     <nav>
@@ -16,6 +22,7 @@
         <li class="current"><a href="index.html">Home</a></li>
         <li><a href="chest.html">Chest Workout</a></li>
         <li><a href="back.html">Back Workout</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
     <h1>Achieve Your Fitness Goals</h1>
@@ -30,10 +37,11 @@
   
   <footer>
     <p>This page was created by Zaharia Andrei-Mihai for the <a
-        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
-      Specialization.</p>
+        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.</p>
   </footer>
 
 </body>
-
+<script>
+  document.getElementById('main_content').innerHTML = "This was overwritten using innerHTML"
+</script>
 </html>
