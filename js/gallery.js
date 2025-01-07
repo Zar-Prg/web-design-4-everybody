@@ -12,7 +12,7 @@ function upDate(previewPic){
        document.getElementById('image').innerHTML = `${previewPic.alt}`;
        }
    
-       function unDo(){
+function unDo(){
         /* In this function you should 
        1) Update the url for the background image of the div with the id = "image" 
        back to the orginal-image.  You can use the css code to see what that original URL was
@@ -23,3 +23,12 @@ function upDate(previewPic){
        document.getElementById('image').style.backgroundImage = "url('')";
        document.getElementById('image').innerHTML = 'Hover over an image below to display here.';
     }
+
+function addTab(){
+    let images = document.getElementsByClassName('preview');
+    console.log(images);
+    for(let i = 0; i < images.length; i++){
+        images[i].setAttribute('tabindex', '0');
+        console.log(images[i])+"tabindex added";
+    }
+}
