@@ -32,3 +32,16 @@ function addTab(){
         console.log(images[i])+"tabindex added";
     }
 }
+
+function randImage() {
+    const images = ["images/pexels-amar-13965342.jpg","images/pexels-cottonbro-7673600.jpg","images/pexels-foadshariyati-29526383.jpg", "images/pexels-marcuschanmedia-18060076.jpg", "images/pexels-victorfreitas-791763.jpg", "images/pexels-ketut-subiyanto-4804336.jpg"];
+    
+    let imagesHolders = document.getElementsByClassName('preview');
+    
+    random = images[Math.floor(Math.random() * images.length)];
+    
+    Array.from(imagesHolders).forEach((image) => {
+        let random = images[Math.floor(Math.random() * images.length)];
+        image.src = random;
+    });
+}
